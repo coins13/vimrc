@@ -32,7 +32,6 @@ set ruler
 set matchpairs& matchpairs+=<:>
 set fileformats=unix,dos,mac
 set ambiwidth=double
-"" set mouse=a
 set wildmenu
 set wildmode=list,full
 set cursorcolumn
@@ -41,6 +40,7 @@ set t_Co=256
 set relativenumber
 set lazyredraw
 set statusline+=%r
+set shell=zsh
 
 "" KeyMappings
 nmap <silent> <ESC>e <ESC>:nohlsearch<CR>
@@ -143,7 +143,7 @@ inoremap <ESC>a <ESC>:saveas <Space>
 "" inoremap <S-Tab> <ESC>>><<<<i
 inoremap <C-q> <ESC>:q!<CR>
 
-"" You can edit binary by %vim -b file
+"" You can edit binary by run: %vim -b filename
 augroup BinaryXXD
         autocmd!
         autocmd BufReadPre *.bin let &binary = 1
@@ -317,27 +317,13 @@ NeoBundle "https://github.com/h1mesuke/vim-alignta"
 NeoBundle "https://github.com/scrooloose/syntastic"
 
 "" ----plugins' settings & plugins' keymaps----{
-        "" Conque {
-         let g:ConqueTerm_ReadUnfocused = 1
-         let g:ConqueTerm_CloseOnEnd = 1
-         let g:ConqueTerm_StartMessages = 0
-         let g:ConqueTerm_CWInsert = 1
-        
-         noremap <silent> <Leader>sh :ConqueTermVSplit zsh<CR>
-        
-         function! s:delete_ConqueTerm(buffer_name)
-         let term_obj = conque_term#get_instance(a:buffer_name)
-         call term_obj.close()
-         endfunction
-         autocmd BufWinLeave zsh\s-\s? call <SID>delete_ConqueTerm(expand('%'))
-        "" }
-
-        "" the-nerd-commenter {
+        "" NERDCommenter {
                 let NERDSpaceDelims = 1
                 nmap <ESC>c <Nop>
                 nmap <ESC>c <Plug>NERDCommenterToggle
                 vmap <ESC>c <Plug>NERDCommenterToggle
-        "" }
+        ""}
+
 
         "" neocomplete {
                 "" Disable AutoComplPop.
