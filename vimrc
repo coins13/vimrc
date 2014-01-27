@@ -42,106 +42,14 @@ set lazyredraw
 set statusline+=%r
 set shell=zsh
 
-"" KeyMappings
-nmap <silent> <ESC>e <ESC>:nohlsearch<CR>
-nmap <ESC>t<ESC>l <ESC>:tabn
-nmap <ESC>t<ESC>h <ESC>:tabp
-nmap e <Nop>
-nmap <ESC>a <Nop>
-nmap <ESC>a <ESC>:saveas <Space>
-nmap <ESC>s <Nop>
-nmap <ESC>s <ESC>:w<CR>
-nmap <ESC>s<ESC>s <ESC>:x<CR>
-nmap V <Nop>
-nmap V <C-v>
 nmap <ESC>f <Nop>
 nmap <ESC>f <ESC>:M/
-nmap <C-w> <Nop>
-nmap <ESC>c <Nop>
-nmap <ESC>k <Nop>
 
-vnoremap v $h
-vnoremap L <Nop>
-vnoremap H <Nop>
-vnoremap <ESC>L $
-vnoremap <ESC>H ^
-vnoremap <ESC>j <C-d>
-vnoremap <ESC>k <C-u>
-vnoremap <TAB> >
-vnoremap <S-Tab> <
 "" toggle /*comment*/ (unfinished)
 vnoremap <silent> <ESC>z "qdi/**/<left><left><ESC><ESC>"qp
 
-nnoremap <BS> X
-nnoremap <ESC>1 <C-x>
-nnoremap <ESC>2 <C-a>
-nnoremap j gj
-nnoremap k gk
-nnoremap E <Nop>
-nnoremap E w
-nnoremap W <Nop>
-nnoremap W b
-nnoremap p "0p
-nnoremap P "1p
-nnoremap r <C-r>
-nnoremap L <Nop>
-nnoremap H <Nop>
-nnoremap <ESC>L $
-nnoremap <ESC>H ^
-nnoremap <ESC>j <C-d>
-nnoremap <ESC>k <C-u>
-nnoremap <ESC>s <Nop>
-nnoremap <ESC>s <ESC>:w<CR>
-nnoremap <ESC>s<ESC>s <ESC>:x<CR>
-nnoremap <C-w> <Nop>
-nnoremap <C-W><C-W> <ESC>:q!<CR>
 nnoremap <silent> <F3> :setlocal relativenumber!<CR>
-nnoremap I <Nop>
-nnoremap II <ESC>gg=G
-nnoremap ww <ESC>:vne<Space>
-nnoremap wv <ESC>:new<Space>
-nnoremap w<TAB> <C-w>w
-nnoremap wl <ESC><C-w><<C-w><<C-w><<C-w><<C-w><
-nnoremap wh <ESC><C-w>><C-w>><C-w>><C-w>><C-w>>
-nnoremap wj <ESC><C-w>+<C-w>+<C-w>+<C-w>+<C-w>+
-nnoremap wk <ESC><C-w>-<C-w>-<C-w>-<C-w>-<C-w>-
-nnoremap <return> <ESC>i<return><ESC>
-nnoremap <TAB> >>
-nnoremap <S-Tab> <<
 
-inoremap <ESC>v <Nop>
-inoremap <ESC>v <ESC>"*pa
-inoremap <ESC>1 <Nop>
-inoremap <ESC>2 <Nop>
-inoremap <ESC>1 <ESC><C-x>i
-inoremap <ESC>2 <ESC><C-a>i
-inoremap <ESC>j <Down>
-inoremap <ESC>k <Up>
-inoremap <ESC>h <Left>
-inoremap <ESC>l <Right>
-inoremap <silent> <ESC>e <ESC><ESC>:nohlsearch<CR>
-inoremap <ESC>s <Nop>
-inoremap <ESC>s <ESC>:w<CR>i
-inoremap <ESC>u <ESC>ui
-inoremap <ESC>p <ESC>pi
-inoremap <ESC>d <ESC>ddi
-inoremap L <Nop>
-inoremap L L
-inoremap H <Nop>
-inoremap H H
-inoremap <ESC>L <End>
-inoremap <ESC>H <Home>
-inoremap <C-w> <Nop>
-inoremap <C-w><C-w> <ESC><ESC>:q!<CR>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-inoremap <ESC>f <ESC><ESC>/
-inoremap <ESC>a <ESC>:saveas <Space>
-"" inoremap <S-Tab> <ESC>>><<<<i
-inoremap <C-q> <ESC>:q!<CR>
 
 "" You can edit binary by run: %vim -b filename
 augroup BinaryXXD
