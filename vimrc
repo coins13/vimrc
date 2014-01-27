@@ -225,6 +225,10 @@ NeoBundle "https://github.com/h1mesuke/vim-alignta"
 NeoBundle "https://github.com/scrooloose/syntastic"
 
 "" ----plugins' settings & plugins' keymaps----{
+        "" ergex {
+                nmap <ESC>f <Nop>
+                nmap <ESC>f <ESC>:M/
+        "" }
         "" NERDCommenter {
                 let NERDSpaceDelims = 1
                 nmap <ESC>c <Nop>
