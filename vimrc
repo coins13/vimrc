@@ -210,19 +210,12 @@ if has('vim_starting')
         filetype indent on
 endif
 
-NeoBundle "gmarik/vundle"
-NeoBundle "rails.vim"
+NeoBundle "git://github.com/vim-scripts/rdark"
+
 NeoBundle 'osyo-manga/vim-over'
-NeoBundle "tpope/vim-fugitive"
-NeoBundle "git://github.com/vim-scripts/Align"
 NeoBundle "git://github.com/Shougo/neocomplete.vim"
 NeoBundle "git://github.com/othree/eregex.vim"
 NeoBundle "git://github.com/scrooloose/nerdcommenter"
-NeoBundle "git://github.com/vim-scripts/rdark"
-NeoBundle "git://github.com/Shougo/neosnippet"
-NeoBundle "othree/html5.vim"
-NeoBundle "https://github.com/h1mesuke/vim-alignta"
-NeoBundle "https://github.com/scrooloose/syntastic"
 
 "" ----plugins' settings & plugins' keymaps----{
         "" ergex {
