@@ -31,11 +31,9 @@ neocompleteを使っているのでvimは+luaでビルドしてほしいなっ�
 
 <https://github.com/Shougo/neocomplete.vim>
 
-##eregex
+##[eregex](https://github.com/othree/eregex.vim)
 
 正規表現の強化
-
-<https://github.com/othree/eregex.vim>
 
 ##nerdcommenter
 
