@@ -10,6 +10,7 @@
 neo-hogehogeを使っているしまずはneobundleでも入れませんか｡
 
 `$ mkdir -p ~/.vim/bundle`
+
 `$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
 
 neocompleteを使っているのでvimは+luaでビルドしてほしいなっ｡※機室のはluaが入っていない｡
