@@ -14,6 +14,7 @@ neo-hogehogeを使っているしまずはneobundleでも入れませんか｡
 `$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
 
 neocompleteを使っているのでvimは+luaでビルドしてほしいなっ｡※機室のはluaが入っていない｡
+
 初回はまず :NeoBundleInstall! してください｡
 
 #イカれたぷらがいん達
