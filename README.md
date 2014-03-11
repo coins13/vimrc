@@ -19,24 +19,20 @@ neocompleteを使っているのでvimは+luaでビルドしてほしいなっ�
 
 #イカれたぷらがいん達
 
-##vim-over
+##[vim-over](https://github.com/osyo-manga/vim-over)
 
 置換などをリアルタイムで見られる(?)｡
 
-<https://github.com/osyo-manga/vim-over>
 
-##neocomplete
+##[neocomplete](https://github.com/Shougo/neocomplete.vim)
 
 補完機能がすごくなる｡
 
-<https://github.com/Shougo/neocomplete.vim>
 
 ##[eregex](https://github.com/othree/eregex.vim)
 
 正規表現の強化
 
-##nerdcommenter
+##[nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 
 コメントアウトのトグルなど
-
-<https://github.com/scrooloose/nerdcommenter>
