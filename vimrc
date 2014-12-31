@@ -130,35 +130,39 @@ endif
 
 " ---syntax--- {
 " Java {
-hi link javaMethod Include
-hi link javaBraces Special
-hi link javaClass javaType
-hi link javaScopeDecl Statement
-hi link javaClassDecl Statement
-hi link javaStorageClass Statement
+if &ft == "java"
+	hi link javaMethod Include
+	hi link javaBraces Special
+	hi link javaClass javaType
+	hi link javaScopeDecl Statement
+	hi link javaClassDecl Statement
+	hi link javaStorageClass Statement
 
 
-syn match javaMethod /\<[a-z]\w*\(\s*(.*)\)\@=/
-syn match javaClass /\(class\s\+\)\@<=[A-Z]\w\+/
-syn match javaClass /\(new\s\+\)\@<=[A-Z]\w*/
+	syn match javaMethod /\<[a-z]\w*\(\s*(.*)\)\@=/
+	syn match javaClass /\(class\s\+\)\@<=[A-Z]\w\+/
+	syn match javaClass /\(new\s\+\)\@<=[A-Z]\w*/
 
-autocmd VimEnter *.java syn clear javaFuncDef
-autocmd VimEnter *.java syn match javaClass /\<[A-Z]\w*\(\.\)\@=/
-autocmd VimEnter *.java syn match javaBraces /[()\[\]]/
+	autocmd VimEnter *.java syn clear javaFuncDef
+	autocmd VimEnter *.java syn match javaClass /\<[A-Z]\w*\(\.\)\@=/
+	autocmd VimEnter *.java syn match javaBraces /[()\[\]]/
+endif
 " }
 
 " C {
-hi link cChar cType
-hi link cFunc cInclude
-hi link cSurround Special
+if &ft == "c"
+	hi link cChar cType
+	hi link cFunc cInclude
+	hi link cSurround Special
 
-syn match cChar /[!=%<>+,\(\->\)\-]/
-syn match cChar /\/\(\*\|\/\)\@!/
-syn match cChar /\(\/\)\@<!\*/
-syn match cFunc /\(\<\(\(int\)\|\(void\)\|\(char\)\|\(double\)\|\(float\)\)\s\+\)\@<=\w\+\(\s*(.*)\)\@=/
-syn match cFunc /\<\w\+\>\(\s*(.*)\)\@=/ contains=ALLBUT,cStatement,cLabel,cConditional,cRepeat,cUserLabel,cOperator,cStructure
+	syn match cChar /[!=%<>+,\(\->\)\-]/
+	syn match cChar /\/\(\*\|\/\)\@!/
+	syn match cChar /\(\/\)\@<!\*/
+	syn match cFunc /\(\<\(\(int\)\|\(void\)\|\(char\)\|\(double\)\|\(float\)\)\s\+\)\@<=\w\+\(\s*(.*)\)\@=/
+	syn match cFunc /\<\w\+\>\(\s*(.*)\)\@=/ contains=ALLBUT,cStatement,cLabel,cConditional,cRepeat,cUserLabel,cOperator,cStructure
 
-autocmd VimEnter *.c,*.cpp syn match cSurround /[(){}\[\]]/
+	autocmd VimEnter *.c,*.cpp syn match cSurround /[(){}\[\]]/
+endif
 " }
 " ------ }
 
